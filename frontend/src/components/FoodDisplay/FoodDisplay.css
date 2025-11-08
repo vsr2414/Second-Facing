@@ -1,0 +1,15 @@
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size:(2vw,24px);
+    font-weight: 600 ;
+}
+
+.food-display-list{
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+    row-gap: 50px; 
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
