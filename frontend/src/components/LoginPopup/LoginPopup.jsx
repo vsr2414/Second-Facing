@@ -34,7 +34,7 @@ const LoginPopup = ({setShowLogin}) => {
   const response = await axios.post(newUrl,data);
   if (response.data.success){
 setToken(response.data.token);
-localStorage.setItem("token",response.data,token);
+localStorage.setItem("token",response.data.token);
 setShowLogin(false)
   }
   else{
@@ -62,7 +62,7 @@ setShowLogin(false)
   </div>
   {currState==="Login"
   ?<p> Create a New account? <span onClick={()=>setCurrState("Sign Up")}>Click here</span></p>
-  :<p> Already have an account? <span onClick={()=>setCurState("Login")}> Login here</span></p>
+  :<p> Already have an account? <span onClick={()=>setCurrState("Login")}> Login here</span></p>
 }
   </form>
   </div>
