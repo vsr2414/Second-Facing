@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1.5px;
+    gap: 5px;
     max-width: 50%;
     bottom: 10% ;
     left: 6vw;
@@ -22,7 +22,7 @@
     font-weight: 500;
     color:white;
     font-size: max(4.5vw,22px);
-}
+}                                                                                                       
 
 .header-contents p{
     color: white;
@@ -30,11 +30,31 @@
 }
 
 .header-contents button{
-    border: nonw;
+    border: none;
     color: #747474;
     background-color: white;
     font-weight: 500;
     padding: 1vw 2.3vw;
     border-radius: 50px;
     font-size: max(1vw,13px);
+}
+
+@media (max-width:1050px){
+    
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }
